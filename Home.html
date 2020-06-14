@@ -1,0 +1,82 @@
+<html>
+<!--head begins here-->
+<head>
+    
+    <title>Moo-free Makes</title>
+    
+    <!--stylesheets, last two are for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dmdd.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="dmdd.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <link href='https://fonts.googleapis.com/css?family=Yeseva One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+</head>
+    
+<!--pagebreak line settings-->
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr.new1 {
+  border: 2px solid darkolivegreen;
+  border-radius: 5px;
+    width:500px
+}
+    hr.new2 {
+  border: 2px solid darkolivegreen;
+  border-radius: 5px;
+    width:400px
+}
+    hr.new3 {
+  border: 2px solid darkolivegreen;
+  border-radius: 5px;
+    width:200px
+}
+</style>
+    
+<!--body begins here-->   
+<body>
+    
+    <body style="background-color:white;">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- top navigation menu -->
+    <div class="topnav">
+    <a href="#home" class="active">Menu</a>
+        
+    <!-- navigation links (hidden by default) -->
+    <div id="myLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#recipes">Recipes</a>
+    </div>
+        
+    <!-- "hamburger menu" / "bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+    </div>
+        
+  
+    <!--first heading-->
+    <h1><h1 style="font-family:'Yeseva One';text-align:center">Moo-free Makes</h1>
+    
+        
+<script type="text/javascript">
+    /* toggle between showing and hiding the navigation menu links when the user clicks on the  hamburger menu / bar icon */
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }       
+</script>
