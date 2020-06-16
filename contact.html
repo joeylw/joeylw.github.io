@@ -1,0 +1,126 @@
+<html>
+<!--head begins here-->
+<head>
+    
+    <title>Contact</title>
+    
+    <!--stylesheets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dmdd.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="dmdd.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <link href='https://fonts.googleapis.com/css?family=Mansalva' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cantata One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Yeseva One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    
+    <style>
+    /* fix header weight */
+    h1, h2, h3, h4, h5, h6, h7
+    {
+    font-weight: normal;
+    }
+        
+    /* unvisited link */
+    a:link {
+    text-decoration: none;
+    color: darkgreen;
+    }
+
+    /* visited link */
+    a:visited {
+    text-decoration: none;
+    color: darkgreen;
+    }
+
+    /* mouse over link */
+    a:hover {
+    text-decoration: none;
+    color: darkseagreen;
+    }
+
+    /* selected link */
+    a:active {
+    text-decoration: none;
+    color: darkseagreen;
+    }
+        
+    /* contact form */
+    body {font-family: Open Sans}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+
+    input[type=submit] {
+    background-color: darkgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: darkseagreen;
+    }
+        
+    .container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    </style>
+
+</head>
+    
+<!--body begins here-->   
+<body>
+    
+    <body style="background-color:white;">
+        
+    <!--first heading-->
+    <h1><h1 style="font-family:'Yeseva One';text-align:center;color:darkgreen;font-size:60px;padding: 47">moo-free makes</h1>
+    
+    <!--pages navigation-->
+    <p style="text-align:center;font-family:'Quicksand';font-size:16;">
+    <a href="https://joeylw.github.io/home.html">HOME</a>
+    &nbsp;&nbsp;
+    <a href="https://joeylw.github.io/about.html">ABOUT</a>
+    &nbsp;&nbsp;
+    <a href="https://joeylw.github.io/blog.html">BLOG</a>
+    &nbsp;&nbsp;
+    <a href="https://joeylw.github.io/about.html">PORTFOLIO</a>
+    &nbsp;&nbsp;
+    <a href="https://joeylw.github.io/about.html">CONTACT</a>
+    </p> 
+    
+    <!--contact heading-->
+    <h2><h2 style="font-family:'Cormorant';font-size:50;padding:0 15 0 15;color:darkgreen;text-align: center;">contact</h2>
+    
+    <!--contact form-->
+    <div class="container">
+    <form class="contact-form" action="contactform.php" method="post">
+
+    <label for="fname">Name</label>
+    <input type="text" name="name" placeholder="Your Name">
+        
+    <label for="email">Email</label>
+    <input type="text" name="mail" placeholder="your@email.com">
+
+    <label for="message">Message</label>
+    <textarea name="message" placeholder="Write your message here." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </form>
+    </div>
