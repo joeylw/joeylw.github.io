@@ -17,9 +17,21 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     
     <!--carousel-->
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
     
     <style>
+    
+    /* responsive image */
+    .responsive {
+    max-width: 100%;
+    height: auto;
+    }
+    
     /* fix header weight */
     h1, h2, h3, h4, h5, h6, h7
     {
@@ -91,33 +103,30 @@
     </p>   
     
     <!--carousel-->
-    <div class="w3-content w3-display-container">
-    <img class="mySlides" src="c1.jpg" style="width:100%">
-    <img class="mySlides" src="c2.jpg" style="width:100%">
-    <img class="mySlides" src="c3.jpg" style="width:100%">
-    <img class="mySlides" src="c4.jpg" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <div class="w3-content w3-section" style="max-width:1000px">
+    <a href="https://joeylw.github.io/cheesecake.html">
+    <img class="mySlides" src="cheesecake_title.jpg" style="width:100%">
+    <a href="https://joeylw.github.io/frothy-cappuccino.html">
+    <img class="mySlides" src="coffee_title.jpg" style="width:100%">
+    <img class="mySlides" src="tofu_title.jpg" style="width:100%">
+    <img class="mySlides" src="gnocchi_title.jpg" style="width:100%">
+    </a></a>
     </div>
 
     <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+    var myIndex = 0;
+    carousel();
 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
+    function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
     }
-    x[slideIndex-1].style.display = "block";  
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // change image every 2 seconds
     }
     </script>
     
